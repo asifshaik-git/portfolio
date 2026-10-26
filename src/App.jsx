@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import { Analytics } from '@vercel/analytics/react';
 
 // Register GSAP Plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -1561,6 +1562,7 @@ export default function App() {
         </section>
 
       </main>
+      <Analytics />
     </div>
   );
 }
